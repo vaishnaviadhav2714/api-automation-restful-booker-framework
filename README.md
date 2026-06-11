@@ -36,7 +36,7 @@ This framework follows a layered automation approach:
 
 ## 📂 Project Structure
 
-restful-booker-api-automation-framework/
+restful-booker-api-automation-framework
 │
 ├── collections/
 │ └── restful-booker.collection.json
