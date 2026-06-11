@@ -16,15 +16,15 @@ pipeline {
             }
         }
 
-        stage('Run API Tests') {
+       stage('Run API Tests') {
     steps {
         bat '''
-        npx newman run collections\\Restful Booker API Testing Framework.postman_collection.json ^
+        npx newman run collections\\restful-booker.collection.json ^
         -e environments\\QA.postman_environment.json ^
         -r cli,htmlextra ^
         --reporter-htmlextra-export reports\\report.html
         '''
-      }
     }
+}
     }
 }
